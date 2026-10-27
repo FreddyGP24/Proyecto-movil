@@ -1,0 +1,159 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="App.uss" />
+    <ui:VisualElement name="app" class="app">
+        <ui:VisualElement name="safe-area" class="safe-area">
+            <ui:VisualElement class="phone-shell">
+                <ui:VisualElement name="app-content" class="app-content">
+
+                    <ui:VisualElement name="screen-splash" class="screen splash">
+                        <ui:Label text="UNA IDEA NOS CONECTA" class="eyebrow splash-eyebrow" />
+                        <ui:VisualElement class="splash-center">
+                            <ui:VisualElement class="brand-mark splash-mark">
+                                <ui:VisualElement class="mark-link mark-link-one" />
+                                <ui:VisualElement class="mark-link mark-link-two" />
+                            </ui:VisualElement>
+                            <ui:Label name="splash-name" text="Unity Facebook" class="splash-title" />
+                            <ui:Label text="Personas. Ideas. Conexiones." class="splash-subtitle" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="splash-bottom">
+                            <ui:VisualElement class="progress-track"><ui:VisualElement name="splash-progress" class="progress-fill" /></ui:VisualElement>
+                            <ui:Label text="HECHO EN EQUIPO · 2026" class="eyebrow splash-eyebrow" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="screen-login" class="screen hidden">
+                        <ui:ScrollView class="page-scroll" mode="Vertical" horizontal-scroller-visibility="Hidden">
+                            <ui:VisualElement class="page login-page">
+                                <ui:VisualElement class="brand-row">
+                                    <ui:VisualElement class="brand-mark"><ui:VisualElement class="mark-link mark-link-one" /><ui:VisualElement class="mark-link mark-link-two" /></ui:VisualElement>
+                                    <ui:Label text="Unity Facebook" class="brand-name" />
+                                    <ui:Label text="HOLA, TÚ" class="small-tag" />
+                                </ui:VisualElement>
+                                <ui:VisualElement class="login-art">
+                                    <ui:VisualElement class="orbit orbit-one" /><ui:VisualElement class="orbit orbit-two" />
+                                    <ui:VisualElement class="orbit-core"><ui:Label text="u" class="core-letter" /><ui:Label text="f" class="core-letter core-second" /></ui:VisualElement>
+                                    <ui:Label text="+" class="art-spark spark-one" /><ui:Label text="+" class="art-spark spark-two" />
+                                    <ui:Label text="TU SIGUIENTE CONEXIÓN" class="art-caption" />
+                                    <ui:VisualElement class="art-dot" />
+                                </ui:VisualElement>
+                                <ui:Label text="UN ESPACIO PARA CONECTAR" class="eyebrow section-eyebrow" />
+                                <ui:Label text="Las grandes ideas&#10;empiezan contigo." class="display-title" />
+                                <ui:Label text="Entra, conoce al equipo y descubre lo que podemos crear juntos." class="body login-description" />
+                                <ui:Button name="facebook-button" class="button facebook-button">
+                                    <ui:Label text="f" class="facebook-icon" />
+                                    <ui:Label name="facebook-label" text="Continuar con Facebook" class="button-label" />
+                                    <ui:Label text="→" class="button-arrow" />
+                                </ui:Button>
+                                <ui:Label name="login-status" class="status-message" />
+                                <ui:VisualElement class="privacy-row"><ui:VisualElement class="privacy-dot" /><ui:Label text="Acceso seguro a través de Facebook.&#10;Tu contraseña no se comparte con esta app." class="caption" /></ui:VisualElement>
+                                <ui:VisualElement class="divider-row"><ui:VisualElement class="divider" /><ui:Label text="O CONOCE LA EXPERIENCIA" class="divider-label" /><ui:VisualElement class="divider" /></ui:VisualElement>
+                                <ui:Button name="demo-toggle" text="Explorar en modo demo  →" class="text-button demo-toggle" />
+                                <ui:VisualElement name="demo-form" class="demo-form hidden">
+                                    <ui:Label text="Tu espacio de prueba" class="card-title" />
+                                    <ui:Label text="Sin crear una cuenta. Usa datos de ejemplo." class="caption" />
+                                    <ui:Label text="NOMBRE" class="field-label" /><ui:TextField name="demo-name" class="text-field" />
+                                    <ui:Label text="CORREO · OPCIONAL" class="field-label" /><ui:TextField name="demo-email" class="text-field" />
+                                    <ui:Label name="demo-error" class="error-message" />
+                                    <ui:Button name="demo-submit" text="Entrar a la demo  →" class="button primary-button" />
+                                </ui:VisualElement>
+                                <ui:Label text="DISEÑADO PARA COMPARTIR IDEAS" class="eyebrow login-footer" />
+                            </ui:VisualElement>
+                        </ui:ScrollView>
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="screen-home" class="screen hidden">
+                        <ui:ScrollView class="page-scroll" mode="Vertical" horizontal-scroller-visibility="Hidden">
+                            <ui:VisualElement class="page">
+                                <ui:VisualElement class="brand-row"><ui:VisualElement class="brand-mark"><ui:VisualElement class="mark-link mark-link-one" /><ui:VisualElement class="mark-link mark-link-two" /></ui:VisualElement><ui:Label text="Unity Facebook" class="brand-name" /><ui:Label text="01 / INICIO" class="small-tag" /></ui:VisualElement>
+                                <ui:VisualElement class="welcome-heading"><ui:Label text="QUÉ BUENO VERTE AQUÍ" class="eyebrow" /><ui:Label name="welcome-name" text="Hola, Freddy." class="display-title" /><ui:Label text="Este espacio también es tuyo." class="body" /></ui:VisualElement>
+                                <ui:VisualElement class="user-card"><ui:Label name="user-avatar" text="FG" class="user-avatar" /><ui:VisualElement class="user-copy"><ui:Label name="user-name" text="Freddy Gómez" class="user-name" /><ui:Label name="user-email" text="Explorando en modo demo" class="muted user-email" /></ui:VisualElement><ui:VisualElement class="online-dot" /></ui:VisualElement>
+                                <ui:Button name="team-button" class="feature-card">
+                                    <ui:Label text="DETRÁS DE LA PANTALLA" class="eyebrow feature-eyebrow" />
+                                    <ui:Label text="Un equipo.&#10;Muchas ideas." class="feature-title" />
+                                    <ui:Label text="Conoce a quienes hacen&#10;posible esta experiencia." class="feature-description" />
+                                    <ui:VisualElement class="feature-bottom"><ui:Label text="Acerca de nosotros" class="feature-link" /><ui:Label text="↗" class="feature-arrow" /></ui:VisualElement>
+                                    <ui:VisualElement class="feature-orbit feature-orbit-one" /><ui:VisualElement class="feature-orbit feature-orbit-two" />
+                                </ui:Button>
+                                <ui:Label name="session-note" text="Modo demo. Los datos de acceso no se guardan." class="caption session-note" />
+                                <ui:Button name="logout-button" text="Cerrar sesión  →" class="text-button account-action" />
+                                <ui:Button name="exit-button" text="Salir de la aplicación" class="text-button exit-action" />
+                            </ui:VisualElement>
+                        </ui:ScrollView>
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="screen-team" class="screen hidden">
+                        <ui:ScrollView class="page-scroll" mode="Vertical" horizontal-scroller-visibility="Hidden">
+                            <ui:VisualElement class="page">
+                                <ui:VisualElement class="topbar"><ui:Button name="team-back" text="←  Inicio" class="text-button back-button" /><ui:Label text="02 / NOSOTROS" class="small-tag" /></ui:VisualElement>
+                                <ui:Label name="team-count" text="05 PERSONAS · UNA VISIÓN" class="eyebrow section-eyebrow" />
+                                <ui:Label text="El talento detrás&#10;de la idea." class="display-title" />
+                                <ui:Label name="team-description" class="body team-description" />
+                                <ui:VisualElement class="course-pill"><ui:VisualElement class="privacy-dot" /><ui:Label name="course-name" text="Desarrollo Móvil Integral" class="caption" /></ui:VisualElement>
+                                <ui:VisualElement name="team-list" class="team-list" />
+                                <ui:Label text="CRECEMOS CUANDO CREAMOS JUNTOS." class="eyebrow team-footer" />
+                            </ui:VisualElement>
+                        </ui:ScrollView>
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="screen-profile" class="screen hidden">
+                        <ui:ScrollView class="page-scroll" mode="Vertical" horizontal-scroller-visibility="Hidden">
+                            <ui:VisualElement class="page">
+                                <ui:VisualElement class="topbar"><ui:Button name="profile-back" text="←  El equipo" class="text-button back-button" /><ui:Label name="profile-pagination" text="01 / 05" class="small-tag" /></ui:VisualElement>
+                                <ui:VisualElement class="profile-cover"><ui:VisualElement name="profile-art" class="profile-art" /><ui:Label name="profile-number" text="01" class="profile-number" /><ui:Label name="profile-art-caption" text="EL EQUIPO / UNITY FACEBOOK" class="profile-art-caption" /></ui:VisualElement>
+                                <ui:Label text="CONOCE A" class="eyebrow section-eyebrow" />
+                                <ui:Label name="profile-name" text="Freddy Gómez" class="profile-title" />
+                                <ui:Label name="profile-role" text="Integrante del equipo" class="profile-role" />
+                                <ui:VisualElement class="profile-rule" />
+                                <ui:Label text="UN POCO SOBRE MÍ" class="eyebrow" /><ui:Label name="profile-bio" class="body profile-bio" />
+                                <ui:Label text="LO QUE NOS UNE" class="eyebrow" /><ui:VisualElement name="profile-skills" class="skills" />
+                                <ui:VisualElement class="profile-course-card"><ui:Label text="PROYECTO ACADÉMICO" class="eyebrow" /><ui:Label name="profile-course" text="Desarrollo Móvil Integral" class="card-title" /><ui:Label text="Aprender haciendo. Crear compartiendo." class="caption" /></ui:VisualElement>
+                                <ui:VisualElement class="profile-navigation"><ui:Button name="profile-prev" text="←  Anterior" class="button secondary-button" /><ui:Button name="profile-next" text="Siguiente  →" class="button primary-button" /></ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:ScrollView>
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="bottom-nav" class="bottom-nav hidden"><ui:Button name="nav-home" text="⌂   Inicio" class="nav-button nav-active" /><ui:Button name="nav-team" text="◎   El equipo" class="nav-button" /></ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="facebook-editor-overlay" class="facebook-editor-overlay hidden">
+                    <ui:ScrollView class="page-scroll" mode="Vertical" horizontal-scroller-visibility="Hidden">
+                        <ui:VisualElement class="page facebook-editor-page">
+                            <ui:VisualElement class="topbar">
+                                <ui:Label text="PRUEBA EN UNITY" class="small-tag" />
+                                <ui:Button name="facebook-editor-close" text="Cerrar  ×" class="text-button" />
+                            </ui:VisualElement>
+                            <ui:Label text="f" class="facebook-editor-mark" />
+                            <ui:Label name="facebook-editor-title" text="Conecta tu&#10;cuenta de Facebook." class="display-title facebook-editor-title" />
+                            <ui:Label name="facebook-editor-description" text="Autoriza tu cuenta en Meta y vuelve aquí para continuar con tu perfil." class="body" />
+                            <ui:VisualElement name="facebook-editor-saved" class="facebook-editor-saved hidden">
+                                <ui:Label text="CUENTAS GUARDADAS EN ESTE EDITOR" class="eyebrow" />
+                                <ui:VisualElement name="facebook-editor-accounts" />
+                                <ui:Button name="facebook-editor-add" text="Agregar otra cuenta  +" class="text-button" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="facebook-editor-add-form">
+                                <ui:VisualElement class="facebook-editor-card">
+                                    <ui:Label text="1 / AUTORIZA TU CUENTA" class="eyebrow" />
+                                    <ui:Label text="Elige esta aplicación en Meta y genera un token de usuario con el permiso public_profile." class="caption facebook-editor-instructions" />
+                                    <ui:Button name="facebook-editor-browser" text="Abrir Meta en el navegador  ↗" class="button secondary-button" />
+                                </ui:VisualElement>
+                                <ui:Label text="2 / CONECTA TU PERFIL" class="eyebrow" />
+                                <ui:Label text="TOKEN DE ACCESO DE USUARIO" class="field-label" />
+                                <ui:TextField name="facebook-editor-token" class="text-field facebook-editor-token" is-password-field="true" />
+                                <ui:Label text="Se guardará cifrado para que puedas seleccionar esta cuenta en el editor. Puedes quitarla cuando quieras." class="caption facebook-editor-token-note" />
+                                <ui:Button name="facebook-editor-connect" text="Guardar y continuar  →" class="button facebook-editor-connect" />
+                            </ui:VisualElement>
+                            <ui:Label name="facebook-editor-status" class="error-message" />
+                            <ui:Button name="facebook-editor-cancel" text="Volver al inicio" class="text-button facebook-editor-cancel" />
+                            <ui:Label text="Tu contraseña se introduce únicamente en Facebook. El simulador no accede a las cuentas de tu teléfono." class="caption facebook-editor-footer" />
+                        </ui:VisualElement>
+                    </ui:ScrollView>
+                </ui:VisualElement>
+                <ui:VisualElement name="dialog-overlay" class="dialog-overlay hidden">
+                    <ui:VisualElement name="dialog" class="dialog">
+                        <ui:Label text="HASTA PRONTO" class="eyebrow" /><ui:Label name="dialog-title" class="dialog-title" /><ui:Label name="dialog-description" class="body" />
+                        <ui:VisualElement class="dialog-actions"><ui:Button name="dialog-cancel" text="Quedarme" class="button secondary-button" /><ui:Button name="dialog-confirm" text="Cerrar sesión" class="button primary-button" /></ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

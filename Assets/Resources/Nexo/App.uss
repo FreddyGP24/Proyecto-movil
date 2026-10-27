@@ -1,0 +1,194 @@
+/* Native UI Toolkit styles: phone-first, scrollable, and safe-area aware. */
+.app {
+    flex-grow: 1;
+    background-color: #dee3d9;
+    color: #203a30;
+    font-size: 15px;
+    -unity-font-style: normal;
+}
+Label { margin: 0; padding: 0; white-space: normal; -unity-text-align: upper-left; }
+Button { margin: 0; }
+.safe-area { flex-grow: 1; align-items: center; }
+.phone-shell { flex-grow: 1; width: 100%; max-width: 520px; background-color: #f7f7f0; overflow: hidden; }
+.app-content { flex-grow: 1; }
+.screen { flex-grow: 1; flex-shrink: 1; min-height: 0; }
+.hidden { display: none; }
+.page-scroll { flex-grow: 1; flex-shrink: 1; }
+.page-scroll .unity-scroll-view__content-container { flex-grow: 1; }
+.page-scroll .unity-scroller--vertical { width: 5px; margin-right: 2px; }
+.page-scroll .unity-scroller--vertical .unity-scroller__low-button,
+.page-scroll .unity-scroller--vertical .unity-scroller__high-button { display: none; }
+.page { padding: 26px 28px 28px; flex-grow: 1; flex-shrink: 0; }
+.brand-row { flex-direction: row; align-items: center; margin-bottom: 25px; }
+.brand-name { font-size: 18px; -unity-font-style: bold; margin-left: 10px; flex-grow: 1; }
+.small-tag { font-size: 9px; letter-spacing: 0.8px; color: #68796a; -unity-font-style: bold; white-space: nowrap; }
+.brand-mark { width: 36px; height: 36px; background-color: #c8ed85; border-radius: 11px; flex-shrink: 0; overflow: hidden; }
+.mark-link { position: absolute; width: 13px; height: 20px; border-width: 3px; border-color: #214535; border-radius: 8px; rotate: 35deg; }
+.mark-link-one { left: 8px; top: 5px; }
+.mark-link-two { left: 15px; top: 12px; }
+.eyebrow { font-size: 10px; letter-spacing: 1.5px; -unity-font-style: bold; color: #5d735f; }
+.section-eyebrow { margin-top: 27px; margin-bottom: 12px; }
+.display-title { font-size: 36px; -unity-font-style: bold; letter-spacing: -1.2px; color: #203a30; margin-bottom: 13px; }
+.body { font-size: 15px; color: #6a786d; white-space: normal; }
+.caption { font-size: 12px; color: #728073; white-space: normal; }
+.muted { font-size: 12px; color: #7c867c; }
+.card-title { font-size: 18px; -unity-font-style: bold; color: #203a30; margin-bottom: 8px; }
+.button { height: 54px; min-height: 48px; padding: 0 18px; border-radius: 15px; border-width: 0; font-size: 15px; -unity-font-style: bold; -unity-text-align: middle-center; flex-shrink: 0; }
+.primary-button { background-color: #c8ed85; color: #203a30; }
+.primary-button:hover { background-color: #b8e46c; }
+.primary-button:active { background-color: #acd75e; }
+.secondary-button { background-color: #ecefe4; color: #304b3a; }
+.secondary-button:hover { background-color: #e0e7d5; }
+.button:focus, .text-button:focus, .member-card:focus, .feature-card:focus, .nav-button:focus { border-color: #7a9e53; border-width: 2px; }
+.text-button { border-width: 0; border-radius: 10px; background-color: rgba(0, 0, 0, 0); color: #38573b; padding: 9px 0; font-size: 14px; -unity-font-style: bold; min-height: 44px; }
+.text-button:hover { background-color: #eaf0e0; border-radius: 10px; }
+.text-button:active { background-color: #dce6cb; }
+.login-art { height: 198px; background-color: #e9eedf; border-radius: 25px; overflow: hidden; align-items: center; justify-content: center; flex-shrink: 0; }
+.orbit { position: absolute; width: 240px; height: 100px; border-width: 1px; border-color: #b1c29d; border-radius: 100px; }
+.orbit-one { rotate: -30deg; }
+.orbit-two { rotate: 35deg; }
+.orbit-core { width: 103px; height: 103px; background-color: #c8ed85; border-radius: 32px; rotate: -12deg; flex-direction: row; align-items: center; justify-content: center; margin-top: -15px; }
+.core-letter { font-size: 59px; -unity-font-style: bold; color: #254c36; margin-top: -7px; letter-spacing: -7px; }
+.core-second { color: #66894c; margin-left: -2px; }
+.art-spark { position: absolute; font-size: 25px; color: #668153; }
+.spark-one { left: 42px; top: 30px; }
+.spark-two { right: 45px; bottom: 38px; font-size: 19px; }
+.art-dot { position: absolute; width: 10px; height: 10px; border-radius: 5px; background-color: #c8ed85; right: 57px; top: 38px; }
+.art-caption { position: absolute; bottom: 16px; font-size: 8px; letter-spacing: 1.8px; color: #738467; -unity-font-style: bold; }
+.login-description { margin-bottom: 26px; }
+.facebook-button { flex-direction: row; background-color: #254e3b; color: #ffffff; align-items: center; justify-content: center; }
+.facebook-button:hover { background-color: #326449; }
+.facebook-button:active { background-color: #193b2b; }
+.facebook-button:disabled { opacity: 0.6; }
+.facebook-icon { font-size: 29px; -unity-font-style: bold; margin-right: 16px; color: #c8ed85; }
+.button-label { flex-grow: 1; font-size: 14px; color: #ffffff; -unity-font-style: bold; white-space: nowrap; }
+.button-arrow { color: #c8ed85; font-size: 23px; }
+.status-message { color: #98603b; font-size: 12px; margin-top: 9px; }
+.privacy-row { flex-direction: row; align-items: center; justify-content: center; margin-top: 12px; }
+.privacy-dot { width: 6px; height: 6px; border-radius: 4px; background-color: #8da665; margin-right: 9px; flex-shrink: 0; }
+.divider-row { flex-direction: row; align-items: center; margin-top: 28px; margin-bottom: 8px; }
+.divider { flex-grow: 1; height: 1px; background-color: #e0e5d7; }
+.divider-label { font-size: 8px; letter-spacing: 0.8px; color: #8c9686; margin-left: 10px; margin-right: 10px; white-space: nowrap; flex-shrink: 0; }
+.demo-toggle { color: #526747; font-size: 13px; }
+.demo-form { background-color: #ffffff; padding: 22px; margin-top: 12px; border-radius: 20px; border-width: 1px; border-color: #e1e7d8; }
+.field-label { font-size: 9px; letter-spacing: 1px; color: #6b7c63; margin-top: 18px; margin-bottom: 8px; -unity-font-style: bold; }
+.text-field { margin: 0; height: 47px; min-height: 47px; }
+.text-field > .unity-text-field__input { background-color: #f6f7f0; border-radius: 10px; border-width: 1px; border-color: #dbe2d1; padding: 9px 12px; color: #203a30; font-size: 15px; }
+.text-field > .unity-text-field__input:focus { border-color: #75954a; border-width: 2px; }
+.error-message { font-size: 12px; color: #a44f37; margin-top: 8px; margin-bottom: 10px; }
+.login-footer { -unity-text-align: middle-center; font-size: 8px; margin-top: 28px; color: #9aa38f; }
+.welcome-heading { margin-top: 9px; margin-bottom: 23px; }
+.welcome-heading .eyebrow { margin-bottom: 12px; }
+.welcome-heading .display-title { font-size: 41px; margin-bottom: 8px; }
+.user-card { border-radius: 20px; padding: 16px; flex-direction: row; align-items: center; background-color: #ffffff; border-width: 1px; border-color: #e7ebdf; margin-bottom: 22px; }
+.user-avatar { width: 48px; height: 48px; background-color: #e9efd9; color: #476039; border-radius: 16px; font-size: 18px; -unity-font-style: bold; -unity-text-align: middle-center; flex-shrink: 0; }
+.user-copy { flex-grow: 1; flex-shrink: 1; margin-left: 13px; }
+.user-name { font-size: 16px; -unity-font-style: bold; margin-bottom: 4px; }
+.user-email { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.online-dot { width: 8px; height: 8px; background-color: #a8d966; border-radius: 5px; margin-left: 10px; }
+.feature-card { background-color: #254b38; color: #ffffff; border-width: 0; border-radius: 25px; padding: 26px; min-height: 275px; overflow: hidden; align-items: flex-start; }
+.feature-card:hover { background-color: #2b5740; }
+.feature-card:active { background-color: #1c3d2c; }
+.feature-eyebrow { color: #bbcf9d; font-size: 9px; margin-bottom: 17px; }
+.feature-title { font-size: 33px; color: #f7f8ee; -unity-font-style: bold; letter-spacing: -0.6px; }
+.feature-description { color: #bfd0bc; font-size: 14px; margin-top: 14px; }
+.feature-bottom { flex-direction: row; align-items: center; margin-top: 23px; align-self: stretch; }
+.feature-link { flex-grow: 1; color: #d6efad; font-size: 14px; -unity-font-style: bold; }
+.feature-arrow { width: 34px; height: 34px; background-color: #c8ed85; border-radius: 18px; -unity-text-align: middle-center; color: #254b38; font-size: 25px; }
+.feature-orbit { position: absolute; width: 170px; height: 170px; border-width: 1px; border-color: rgba(206, 235, 163, 0.16); border-radius: 90px; right: -75px; top: 27px; }
+.feature-orbit-two { top: 67px; right: -49px; }
+.session-note { margin-top: 22px; margin-bottom: 12px; margin-left: 4px; }
+.account-action { color: #435b3e; -unity-text-align: middle-left; padding-left: 4px; }
+.exit-action { font-size: 12px; color: #8a9481; -unity-text-align: middle-left; padding-left: 4px; }
+.bottom-nav { flex-direction: row; background-color: #fdfdf7; border-top-width: 1px; border-top-color: #e3e8d9; padding: 12px 28px; flex-shrink: 0; }
+.nav-button { flex-grow: 1; height: 46px; border-radius: 14px; border-width: 0; background-color: rgba(0, 0, 0, 0); color: #829079; font-size: 13px; -unity-font-style: bold; margin-left: 4px; margin-right: 4px; }
+.nav-button:hover { background-color: #edf2e3; }
+.nav-active { background-color: #e6efd5; color: #34552e; }
+.topbar { flex-direction: row; align-items: center; justify-content: space-between; margin-bottom: 9px; }
+.back-button { padding-right: 14px; -unity-text-align: middle-left; font-size: 13px; }
+.team-description { margin-bottom: 19px; }
+.course-pill { flex-direction: row; align-items: center; align-self: flex-start; padding: 9px 13px; background-color: #e9efdd; border-radius: 9px; }
+.course-pill .caption { font-size: 11px; color: #647750; }
+.team-list { margin-top: 24px; flex-shrink: 0; }
+.member-card { flex-direction: row; align-items: center; border-radius: 19px; background-color: #ffffff; border-width: 1px; border-color: #e3e9db; padding: 12px; margin-bottom: 12px; min-height: 100px; }
+.member-card:hover { background-color: #eff5e3; border-color: #c8d7b0; }
+.member-card:active { background-color: #e3edcf; }
+.member-avatar { width: 66px; height: 74px; border-radius: 13px; overflow: hidden; flex-shrink: 0; -unity-background-scale-mode: scale-and-crop; }
+.avatar-head { position: absolute; width: 40%; height: 37%; left: 30%; top: 17%; border-radius: 100px; background-color: rgba(38, 68, 41, 0.18); }
+.avatar-figure { position: absolute; width: 82%; height: 55%; left: 9%; bottom: -14%; border-radius: 100px; background-color: rgba(38, 68, 41, 0.18); }
+.avatar-initials { position: absolute; left: 0; right: 0; bottom: 5px; -unity-text-align: middle-center; font-size: 13px; -unity-font-style: bold; color: #354e32; }
+.member-copy { margin-left: 15px; flex-grow: 1; flex-shrink: 1; }
+.member-copy .eyebrow { font-size: 8px; letter-spacing: 0.8px; color: #9aa68b; margin-bottom: 7px; }
+.member-name { font-size: 18px; -unity-font-style: bold; color: #294232; margin-bottom: 4px; }
+.member-copy .muted { font-size: 11px; }
+.member-arrow { font-size: 23px; color: #78955e; margin-right: 4px; margin-left: 8px; }
+.team-footer { font-size: 8px; -unity-text-align: middle-center; margin-top: 15px; color: #97a087; }
+.profile-cover { height: 226px; border-radius: 24px; overflow: hidden; margin-top: 13px; }
+.profile-art { flex-grow: 1; overflow: hidden; -unity-background-scale-mode: scale-and-crop; }
+.profile-art .avatar-head { width: 31%; height: 47%; left: 34.5%; top: 10%; background-color: rgba(38, 68, 41, 0.19); }
+.profile-art .avatar-figure { width: 70%; height: 82%; left: 15%; bottom: -42%; background-color: rgba(38, 68, 41, 0.19); }
+.profile-art .avatar-initials { font-size: 34px; bottom: 44px; letter-spacing: 5px; color: #345135; }
+.profile-number { position: absolute; top: 13px; left: 18px; font-size: 57px; -unity-font-style: bold; color: rgba(38, 68, 41, 0.22); }
+.profile-art-caption { position: absolute; left: 20px; bottom: 15px; font-size: 8px; letter-spacing: 1.3px; -unity-font-style: bold; color: #496443; }
+.profile-title { font-size: 35px; -unity-font-style: bold; letter-spacing: -1px; margin-bottom: 8px; }
+.profile-role { font-size: 14px; color: #7f916d; }
+.profile-rule { height: 1px; background-color: #dfe6d3; margin-top: 24px; margin-bottom: 24px; }
+.profile-bio { margin-top: 12px; margin-bottom: 23px; }
+.skills { flex-direction: row; flex-wrap: wrap; margin-top: 11px; margin-bottom: 18px; }
+.skill { font-size: 11px; padding: 8px 12px; color: #5d7547; background-color: #eaf0de; border-radius: 10px; margin-right: 7px; margin-bottom: 7px; }
+.profile-course-card { background-color: #ffffff; padding: 20px; border-radius: 18px; border-width: 1px; border-color: #e4e9dc; }
+.profile-course-card .eyebrow { font-size: 8px; margin-bottom: 9px; }
+.profile-course-card .card-title { font-size: 16px; }
+.profile-navigation { flex-direction: row; margin-top: 23px; }
+.profile-navigation .button { flex-grow: 1; font-size: 13px; padding-left: 8px; padding-right: 8px; }
+.profile-navigation .secondary-button { margin-right: 10px; }
+.splash-mode .phone-shell { background-color: #203f30; }
+.splash { background-color: #203f30; padding: 42px 32px 35px; }
+.splash-eyebrow { color: #91ac7b; font-size: 9px; -unity-text-align: middle-center; }
+.splash-center { flex-grow: 1; justify-content: center; align-items: center; padding-bottom: 20px; }
+.splash-mark { width: 110px; height: 110px; border-radius: 33px; margin-bottom: 28px; rotate: -9deg; }
+.splash-mark .mark-link { width: 36px; height: 58px; border-width: 8px; border-radius: 20px; }
+.splash-mark .mark-link-one { left: 25px; top: 16px; }
+.splash-mark .mark-link-two { left: 49px; top: 37px; }
+.splash-title { font-size: 35px; -unity-font-style: bold; color: #f4f7eb; letter-spacing: -1px; -unity-text-align: middle-center; }
+.splash-subtitle { color: #a2b794; font-size: 14px; margin-top: 13px; }
+.splash-bottom { align-items: center; }
+.progress-track { width: 100px; height: 3px; background-color: #3d5b40; border-radius: 2px; margin-bottom: 25px; overflow: hidden; }
+.progress-fill { width: 0; height: 3px; background-color: #c8ed85; }
+.dialog-overlay { position: absolute; left: 0; top: 0; right: 0; bottom: 0; background-color: rgba(14, 36, 23, 0.55); justify-content: center; padding: 28px; }
+.dialog { background-color: #f7f7f0; border-radius: 24px; padding: 28px 24px; }
+.dialog .eyebrow { margin-bottom: 15px; }
+.dialog-title { font-size: 28px; -unity-font-style: bold; color: #203a30; margin-bottom: 13px; }
+.dialog-actions { flex-direction: row; margin-top: 26px; }
+.dialog-actions .button { flex-grow: 1; font-size: 12px; padding-left: 8px; padding-right: 8px; }
+.dialog-actions .secondary-button { margin-right: 10px; }
+.compact .login-art { height: 150px; }
+.compact .page { padding-top: 18px; }
+.compact .display-title { font-size: 33px; }
+.compact .brand-row { margin-bottom: 18px; }
+.compact .section-eyebrow { margin-top: 22px; }
+.facebook-editor-overlay { position: absolute; left: 0; top: 0; right: 0; bottom: 0; background-color: #f7f7f0; }
+.facebook-editor-page { padding-top: 16px; }
+.facebook-editor-mark { width: 62px; height: 62px; border-radius: 19px; background-color: #1877f2; color: #ffffff; font-size: 53px; -unity-font-style: bold; -unity-text-align: middle-center; margin-top: 18px; margin-bottom: 24px; flex-shrink: 0; }
+.facebook-editor-title { font-size: 32px; margin-bottom: 12px; }
+.facebook-editor-card { background-color: #ffffff; border-width: 1px; border-color: #dfe7d8; border-radius: 18px; padding: 19px; margin-top: 24px; margin-bottom: 24px; flex-shrink: 0; }
+.facebook-editor-instructions { margin-top: 11px; margin-bottom: 17px; font-size: 13px; }
+.facebook-editor-card .button { font-size: 12px; padding-left: 10px; padding-right: 10px; }
+.facebook-editor-token-note { margin-top: 10px; }
+.facebook-editor-connect { background-color: #1877f2; color: #ffffff; }
+.facebook-editor-connect:hover { background-color: #1464d0; }
+.facebook-editor-connect:active { background-color: #1055b5; }
+.facebook-editor-connect:disabled { opacity: 0.6; }
+.facebook-editor-cancel { margin-top: 8px; }
+.facebook-editor-footer { -unity-text-align: middle-center; margin-top: 20px; font-size: 11px; }
+.compact .facebook-editor-mark { margin-top: 8px; margin-bottom: 15px; }
+.compact .facebook-editor-title { font-size: 29px; }
+.facebook-editor-saved { margin-top: 24px; }
+.facebook-account { background-color: #ffffff; border-width: 1px; border-color: #dfe7d8; border-radius: 20px; padding: 20px; margin-top: 16px; }
+.facebook-account-heading { flex-direction: row; align-items: center; margin-bottom: 19px; }
+.facebook-account-avatar { width: 53px; height: 53px; border-radius: 28px; background-color: #e4efff; color: #1877f2; font-size: 19px; -unity-font-style: bold; -unity-text-align: middle-center; flex-shrink: 0; }
+.facebook-account-copy { margin-left: 14px; flex-grow: 1; flex-shrink: 1; }
+.facebook-account-name { font-size: 20px; -unity-font-style: bold; color: #203a30; margin-bottom: 4px; }
+.facebook-account-forget { font-size: 12px; margin-top: 8px; }
+#facebook-editor-add-form { flex-shrink: 0; }
+#facebook-editor-connect { margin-top: 15px; }

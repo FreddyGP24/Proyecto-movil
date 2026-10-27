@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dependencies>
+    <androidPackages>
+        <androidPackage spec="com.parse.bolts:bolts-android:1.4.0" />
+        <androidPackage spec="com.facebook.android:facebook-core:[19.0.0,20)" />
+        <androidPackage spec="com.facebook.android:facebook-applinks:[19.0.0,20)" />
+        <androidPackage spec="com.facebook.android:facebook-login:[19.0.0,20)" />
+        <androidPackage spec="com.facebook.android:facebook-share:[19.0.0,20)" />
+        <androidPackage spec="com.facebook.android:facebook-gamingservices:[19.0.0,20)" />
+    </androidPackages>
+    <iosPods>
+        <iosPod name="FBSDKCoreKit_Basics" version="~> 19.0" />
+        <iosPod name="FBSDKCoreKit" version="~> 19.0" />
+        <iosPod name="FBSDKLoginKit" version="~> 19.0" />
+        <iosPod name="FBSDKShareKit" version="~> 19.0" />
+        <iosPod name="FBSDKGamingServicesKit" version="~> 19.0" />
+    </iosPods>
+</dependencies>
